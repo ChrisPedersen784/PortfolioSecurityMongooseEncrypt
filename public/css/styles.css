@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  padding: 2% 0 0 1%;
+}
+
+.footerScale {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.rentalForm {
+  padding: 2% 2% 1% 2%;
+  margin-bottom: 20%;
+}
+
+.succes {
+  text-align: center;
+  padding: 5% 0 0 45%;
+}
+
+.orderTable {
+  padding: 1% 0 0 2%;
+  border: 1px solid black;
+
+}

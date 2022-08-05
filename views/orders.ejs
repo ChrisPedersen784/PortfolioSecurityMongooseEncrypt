@@ -1,0 +1,36 @@
+<%- include("partials/header"); -%>
+
+<form  action="/delete" method="post">
+
+  <% foundResults.forEach(function(post){ %>
+  <div class="container orderTable">
+    <div class="row">
+      <div class="col-sm">
+        <%=post.firstName %>
+      </div>
+      <div class="col-sm">
+        <%=post.lastName %>
+      </div>
+      <div class="col-sm">
+        <%=post.email %>
+      </div>
+      <div class="col-sm">
+        <%=post.phone %>
+      </div>
+      <div class="col-sm">
+        <%=post.land %>
+      </div>
+      <div class="col-sm">
+        <%=post.adresse %>
+      </div>
+      <div class="col-sm">
+      <%=post.bike %>
+    </div>
+    <div class="col-sm">
+    <button type="submit" class="btn btn-danger" name="checkbox" value="<%=post._id%>">Delete</button>
+  </div>
+  </div>
+
+  </div>
+  <% }); %>
+</form>
